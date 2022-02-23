@@ -26,6 +26,9 @@ export class AppComponent {
    * @param user {User} - egy felhasználó
    * @returns {void}
    */
-
+  onDeleteUser(user: User) {
+    console.log('fo app component onDeleteUser, user: ' + user);
+    this.userService.removeUser(user);
+  }
 
 }
